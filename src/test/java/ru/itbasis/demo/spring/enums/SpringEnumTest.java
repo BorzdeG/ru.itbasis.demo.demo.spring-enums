@@ -22,5 +22,6 @@ public class SpringEnumTest extends AbstractTestNGSpringContextTests {
 		final Set<IEnum> fieldEnum = springEnum.getFieldEnum();
 		LOG.debug("fieldEnum: {}", fieldEnum);
 		Assert.assertNotNull(fieldEnum);
+		Assert.assertEquals(fieldEnum.size(), 2);
 	}
 }
