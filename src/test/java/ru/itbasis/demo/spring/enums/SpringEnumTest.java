@@ -8,6 +8,8 @@ import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.Set;
+
 @ContextConfiguration(locations = {"classpath:demo.xml"})
 public class SpringEnumTest extends AbstractTestNGSpringContextTests {
 	private static final transient Logger LOG = LoggerFactory.getLogger(SpringEnumTest.class.getName());
@@ -17,7 +19,7 @@ public class SpringEnumTest extends AbstractTestNGSpringContextTests {
 
 	@Test
 	public void testGetFieldEnumSet() throws Exception {
-		final DemoEnum0 fieldEnum = springEnum.getFieldEnum();
+		final Set<IEnum> fieldEnum = springEnum.getFieldEnum();
 		LOG.debug("fieldEnum: {}", fieldEnum);
 		Assert.assertNotNull(fieldEnum);
 	}
