@@ -1,0 +1,11 @@
+# IDE: IntelliJ Idea
+**/.idea/
+*.ipr
+*.iml
+*.iws
+
+#General
+**/target/
+*.log
+*.class
+*.jar
