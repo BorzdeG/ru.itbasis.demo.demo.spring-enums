@@ -4,6 +4,6 @@ package ru.itbasis.demo.spring.enums;
 public class DemoNoEnumClass implements IEnum {
 	@Override
 	public String name() {
-		return "owner class";
+		return " and that some class";
 	}
 }
